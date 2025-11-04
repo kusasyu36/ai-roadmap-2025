@@ -31,3 +31,29 @@ U.is_palindrome("Able was I ere I saw Elba")  # True
 U.ngram("TOKYO", 2)                           # ['TO','OK','KY','YO']
 U.bmi_class(1.75, 95)                         # '肥満(2度)'
 
+# Project W1: Text Utilities on Real Data
+
+- **目的**: Week1の関数（`is_palindrome`, `ngram`, `word_count_en`, `grade`, `bmi_class`）を実データに適用
+- **データ**: Kaggle SMS Spam（uciml/sms-spam-collection-dataset, `spam.csv`）/ 自前テキスト
+- **依存**: Python標準, `week01_python_basics/utils_day5.py`
+- **ノート**: [`nb_project_w1.ipynb`](./nb_project_w1.ipynb)
+
+## 実行例（スクリーンショット）
+![run](./images/run_example.png)
+
+## 簡易ベンチマーク（word_count_en の集計）
+| 行数 | 時間(ms) |
+|----:|---------:|
+| 100 |   12.4   |
+| 500 |   49.8   |
+| 1,000 | 92.7   |
+| 2,000 | 185.3  |
+
+## 使い方（Colab）
+```python
+!wget -q -O utils_day5.py https://raw.githubusercontent.com/<YOUR_USER>/ai-roadmap-2025/main/week01_python_basics/utils_day5.py
+import utils_day5 as U
+
+
+
+
