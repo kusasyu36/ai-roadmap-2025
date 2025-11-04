@@ -24,3 +24,10 @@ Week1で学んだ「関数・条件分岐・標準ライブラリ・assert」を
 import utils_day5 as U
 U.is_palindrome("Level")  # True
 U.ngram("ABCDE", 3)       # ['ABC','BCD','CDE']
+## 実行例（テキスト）
+```python
+import utils_day5 as U
+U.is_palindrome("Able was I ere I saw Elba")  # True
+U.ngram("TOKYO", 2)                           # ['TO','OK','KY','YO']
+U.bmi_class(1.75, 95)                         # '肥満(2度)'
+
